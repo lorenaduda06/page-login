@@ -1,0 +1,88 @@
+body {
+    background-color:#5F9EA0;
+    line-height:1.6;
+    font-family:calibri;
+}
+
+@font-face {
+    font-family:"lemon";
+    src:url(fonts/LEMONMILK-Bold.otf);
+}
+
+h1 {
+    font-family:'lemon';
+    margin-left:20%;
+    text-shadow:1px 1px 1px #808080;
+}
+
+.dados {
+    display:flex;                   /* coloca section e aside uma ao lado da outra, ele pode alinhar os elementos filhos horizontalmente ou em coluna */
+    max-width:1000px;                /* largura maxima */
+    margin:0 auto;                  /* centraliza de modo geral */
+    height:500px;                   /* altura */
+    border:1px groove #808080;    /* borda ao redor do cadastro */
+}
+
+.form {
+    flex:1;         /* ocupa metade */
+    padding:50px;
+}
+
+input {
+    width:auto;
+    height:25px;
+}
+
+aside {
+    flex:1;                     /* ocupa a outra metade */
+    display:flex;               /* alinha a imagem dentro do aside (centraliza seu conteudo interno) */
+    align-items:center;         /* centraliza no sentido vertical */
+    justify-content:center;     /* centraliza no sentido horizontal */
+    overflow:hidden;
+    
+}
+
+aside img {
+    width:100%;         /* imagem ocupa toda largura de aside */
+    height:100%;        /* imagem ocupa toda altura de aside */
+    object-fit:cover;   /* faz a imagem cobrir todo o aside */
+}
+
+#salvar {
+    border:2px solid black;
+    border-radius:20px;
+    margin-top:3%;
+    margin-left:90%;
+    padding:10px 20px;
+    font-size:15px;
+}
+
+#salvar:hover {
+    background-color:#A9A9A9;
+    cursor:pointer;         /* faz aparecer a a maozinha do mouse */
+}
+
+.message {
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-color:white;
+    padding:40px;
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.3);
+    text-align:center;
+    z-index:1000;
+}
+
+#editarcad {
+    color:black;
+    text-decoration:none;
+}
+
+#editarcad:hover {
+    color:white;
+    text-decoration:underline;
+}

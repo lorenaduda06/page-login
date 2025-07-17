@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>cadastro</title>
+    <link rel="icon" type="image/x-icon" href="imagens/colorfulplaneticon.png">
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <div class="dados">
+        <section class="form">
+            <form>
+                <label for="username">Nome de usuário:</label><br>
+                <input type="text" placeholder="nome de usuário" id="username" username="username"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" placeholder="email" id="email" email="email"><br>
+
+                <div class="input-field">
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" placeholder="senha" id="senha" senha="senha">
+                    <i id="toogle" class="fa-regular fa-eye" onclick="tooglepassword()"></i>
+                </div>
+
+                <p>Selecione a opção correspondente ao seu gênero:</p>
+                <input type="radio" id="feminino" name="sexo" value="Feminino">
+                <label for="feminino">Feminino</label><br>
+
+                <input type="radio" id="masculino" name="sexo" value="Masculino">
+                <label for="masculino">Masculino</label><br>
+                
+                <input type="radio" id="naob" name="sexo" value="Não binário">
+                <label for="naob">Não binário</label><br>
+
+                <input type="radio" id="outro" name="sexo" value="Outro">
+                <label for="outro">Outro</label>
+                
+                <button type="button" onclick="save()" id="salvar">Salvar</button>
+            </form>
+            <a href="editarcadastro.html" target="_self" id="editarcad">Clique aqui para editar seu cadastro</a>
+        <div id="message" class="message">
+            <p id="message-text"></p>
+            <button type="button" onclick="closeMessag()">Ok</button>
+        </div>
+        </section>
+        <aside><img src="imagens/floresta.jpeg" alt="backgroud"></aside>
+        
+    </div>
+    <script src="cadastro.js"></script>
+</body>
+</html>

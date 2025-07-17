@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editarcad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>editar dados de cadastro</title>
+    <link rel="icon" type="image/x-icon" href="imagens/colorfulplaneticon.png">
+</head>
+<body>
+    <h1>editar dados de cadastro</h1>
+    <div class="dados">
+        <section class="form">
+            <form id="editar-cad">
+                <label for="username">Nome de usuário:</label><br>
+                <input type="text" placeholder="novo nome de usuário" id="username" name="username"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="text" placeholder="novo email" id="email" email="email">
+
+                <div class="input-field">
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" placeholder="nova senha" id="senha" senha="senha">
+                    <i id="toogle" class="fa regular fa-eye" onclick="tooglepassword()"></i>
+                </div>
+
+                <p>Selecione a opção correspondente ao seu gênero:</p>
+                <input type="radio" id="feminino" name="sexo" value="Feminino">
+                <label for="sexo">Feminino</label><br>
+
+                <input type="radio" id="masculino" name="sexo" value="Masculino">
+                <label for="sexo">Masculino</label><br>
+
+                <input type="radio" id="nãob" name="sexo" value="nãob">
+                <label for="sexo">Não binário</label><br>
+
+                <input type="radio" id="outro" name="sexo" value="outro">
+                <label for="sexo">Outro</label>
+
+                <button type="submit" id="saveedition">Salvar alterações</button>
+            </form>
+        </section>
+
+        <div id="message" class="message">
+            <p id="message-text"></p>
+            <button type="button" onclick="closeMessag()">Ok</button>
+        </div>
+        <aside><img src="imagens/floresta.jpeg" alt="floresta"></aside>
+    </div>
+    <script src="editarcad.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>login</title>
+    <link rel="icon" type="image/x-icon" href="imagens/colorfulplaneticon.png">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="dados">
+        <aside><img src="imagens/astronaut.jpg" alt="background"></aside>
+        <section class="form">
+            <form>
+                <h1>Login</h1>
+                <label for="username">Nome de usuário</label><br>
+                <input type="text" id="username" name="username">
+
+                <div class="input-field">
+                    <label for="senha">Senha</label><br>
+                    <input type="password" id="senha" name="password">
+                    <i id="toogle" class="fa-regular fa-eye" onclick="togglepassword()"></i><br>
+                    <button type="button" onclick="acessarConta()">Entrar</button>
+                </div>
+            </form>
+
+            <div id="message" class="message">
+                <p id="message-text"></p>
+                <button type="button" onclick="closeMessag()" id="fecharmensagem">Ok</button>
+            </div>
+            <script src="login.js"></script>
+            <p id="criarconta">Não tem um login?</p>
+            <a href="cadastro.html" target="_self">Clique aqui para se cadastrar</a>
+        </section>
+    </div>
+</body>
+</html>

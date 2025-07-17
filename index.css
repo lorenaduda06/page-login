@@ -1,0 +1,119 @@
+body {
+    line-height:1.6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0;
+    height:100vh;       /* altura da tela visível */
+    font-family:calibri;
+}
+
+.background {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image:url("imagens/astronaut.jpg");
+    background-repeat:no-repeat;                /* para não repetir a imagem de fundo */
+    background-size:cover;                      /* para a imagem cobrir toda a área */
+    background-attachment:fixed;                /* fundo fixo */
+    filter:blur(12px);                          /* desfoque da imagem de fundo */
+    position:fixed;                             /* elemento fixo na tela */
+    z-index:-1;                                 /* para ficar no fundo */
+}
+
+@font-face {
+    font-family:'lemon';
+    src:url("fonts/LEMONMILK-Bold.otf");
+}
+
+h1 {
+   text-align:center;
+   font-family:"lemon";
+   text-shadow:1px 1px 1px #808080;
+}
+
+.dados {
+    display:flex;
+    max-width:1000px;
+    margin:0 auto;
+    height:500px;
+    border:1px groove #808080;
+}
+
+aside {
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+aside img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+section {
+    background-color:#5F9EA0;
+}
+
+form {
+    flex:1;
+    padding:60px;
+}
+
+input {
+    width:auto;
+    height:25px;
+}
+
+button {
+    margin-left:50px;
+    margin-top:40px;
+    border:2px solid black;
+    border-radius:20px;
+    padding:10px 20px;
+}
+
+button:hover {
+    background-color:#A9A9A9;
+    cursor:pointer;
+}
+
+#criarconta {
+    margin-left:85px;
+    font-family:calibri;
+}
+
+.message {
+    display:none;                       /* começa sem aparecer na tela */
+    position:fixed;                     /* permanece fixo na tela */
+    top:50%;                            /* centraliza no sentido vertical*/
+    left:50%;                           /* centraliza no sentido horizontal */
+    transform:translate(-50%, -50%);    /* centraliza a area da mensagem */
+    background-color:white;
+    padding:40px;
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.3);
+    text-align:center;
+    z-index:1000;                       /* para a mensagem se sobrepor ao restante */
+}
+
+#fecharmensagem {
+    display:block;
+    margin:20px auto 0 auto;            /* centraliza o botão "ok" */
+}
+
+a {
+    margin-left:55px;
+    text-decoration:none;
+    color:black;
+}
+
+a:hover {
+    text-decoration:underline;
+    color:white;
+}
